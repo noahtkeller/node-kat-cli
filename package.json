@@ -1,0 +1,41 @@
+{
+  "name": "@noahtkeller/kat",
+  "version": "0.1.0",
+  "description": "Yargs wrapper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahtkeller/node-kat-cli.git"
+  },
+  "homepage": "https://github.com/noahtkeller/node-kat-cli",
+  "bugs": "https://github.com/noahtkeller/node-kat-cli/issues",
+  "author": {
+    "name": "Noah Keller",
+    "email": "noahtkeller@gmail.com",
+    "url": "https://noahtkeller.github.io/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.10",
+    "dot-object": "^2.1.4",
+    "electron": "^16.0.0",
+    "got": "^11.8.2",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.1.4",
+    "node": "^17.1.0",
+    "puppeteer": "^11.0.0",
+    "valid-url": "^1.0.9",
+    "yargs": "^17.2.1"
+  },
+  "bin": {
+    "kat": "bin/kat.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./run": "./lib/util/run.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/yargs": "^17.0.5"
+  }
+}
